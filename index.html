@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A curated music playlist." />
+    <meta name="keywords" content="music, playlist, songs, audio" />
+    <meta name="author" content="Justin Rei Cargullo" />
+    <!-- Meta Tags -->
+    <title>Music Playlist</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <!-- Title & Links -->
+    <script src="https://kit.fontawesome.com/d353e6ba3c.js" crossorigin="anonymous"></script>
+    <!-- Font Awesome -->
+</head>
+
+<body>
+    <div class="container">
+        <div class="music-player">
+            <nav>
+                <div class="circle"><i class="fa-solid fa-angle-left"></i></div>
+                <div class="circle"><i class="fa-solid fa-bars"></i></div>
+            </nav>
+            <!-- Angle left Icon and Triple Bars Icon -->
+            <img src="Media/bulong.png" class="song-img" />
+            <!-- Song Image -->
+            <h1>Bulong</h1>
+            <p>December Avenue</p>
+            <!-- Song Title and Artist -->
+
+            <audio id="song" loop>
+                <source src="Media/Bulong.mp3" type="audio/mpeg" />
+            </audio>
+            <!-- Audio Source -->
+            <input type="range" value="0" id="progress" />
+            <!-- Progress Bar -->
+            <div class="time-display">
+                <span id="current-time">0:00</span>
+                <span id="duration">0:00</span>
+            </div>
+            <!-- Current Time Duration -->
+            <div class="controls">
+                <div id="backward"><i class="fa-solid fa-backward"></i></div>
+                <div onclick="playPause()"><i class="fa-solid fa-play" id="ctrlIcon"></i></div>
+                <div id="forward"><i class="fa-solid fa-forward"></i></div>
+            </div>
+            <!-- Controls -->
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <!-- Javascript -->
+</body>
+
+</html>
