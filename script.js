@@ -45,8 +45,8 @@ function loadSong(index) {
   };
 
   song.play();
-  ctrlIcon.classList.add("fa-pause");
-  ctrlIcon.classList.remove("fa-play");
+  ctrlIcon.classList.add("fa-play");
+  ctrlIcon.classList.remove("fa-pause");
 }
 
 
