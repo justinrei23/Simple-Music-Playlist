@@ -101,12 +101,23 @@ nav .circle {
   color: #14098b;
   box-shadow: 0 10px 20px rgba(23, 9, 112, 0.22);
   cursor: pointer;
+  transition: 0.2s;
+}
+
+.controls div:active {
+  background: #150e9f;
+  color: #fff;
+  transform: scale(1.1);
 }
 
 .controls div:nth-child(2) {
   transform: scale(1.5);
   background: #150e9f;
   color: #fff;
+}
+
+.controls div:nth-child(2):active {
+  transform: scale(1.6);
 }
 
 .time-display {
