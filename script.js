@@ -49,6 +49,7 @@ function loadSong(index) {
   ctrlIcon.classList.remove("fa-play");
 }
 
+
 function formatTime(seconds) {
   let min = Math.floor(seconds / 60);
   let sec = Math.floor(seconds % 60);
